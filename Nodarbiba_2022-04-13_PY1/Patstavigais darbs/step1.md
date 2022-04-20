@@ -5,7 +5,7 @@ https://docs.python.org/3/library/functions.html
 
 ### 3 Funkciju apraksts
 #### round(number[, ndigits])
-> ##### Funkcija round(number[, ndigits]) veics skaitl noapalosanu, parametros jaiedod skaitlis un uz cik simboliem janoapalo.
+> Funkcija round(number[, ndigits]) veics skaitl noapalosanu, parametros jaiedod skaitlis un uz cik simboliem janoapalo.
 > ##### piemers
 > ```
 > number1 = float((input("Ievadiet skaitli:")))
@@ -28,7 +28,6 @@ https://docs.python.org/3/library/functions.html
 > number2 = float((input("Ievadietskaitli2:")))
 > print("skaitlu dalijums ar atlikumu ir:", divmod(number1,number2))
 > ```
-
 > ##### piemers2
 > ```
 > number1 = float((input("Ievadietskaitli1:")))
