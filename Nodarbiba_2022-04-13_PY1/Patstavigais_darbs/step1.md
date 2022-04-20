@@ -6,7 +6,7 @@ https://docs.python.org/3/library/functions.html
 ### 3 Funkciju apraksts
 #### round(number[, ndigits])
  Funkcija round(number[, ndigits]) veics skaitl noapalosanu, parametros jaiedod skaitlis un uz cik simboliem janoapalo.
- ##### piemers
+ ###### piemers
  ```
  number1 = float((input("Ievadiet skaitli:")))
  print("Noapalots skaitlis ir:", round(number1, 2))
@@ -14,7 +14,7 @@ https://docs.python.org/3/library/functions.html
 
 ##### bin(x)
  Funkcija bin(x) konverte vesalsus skaitlus no decimalas uz binaro sistemu, ka parametrs jaiedod vesels skaitlis.
- ##### piemers
+ ###### piemers
  ```
  number1 = int((input("Ievadiet veselu decimalo skaitli skaitli:")))
  print("skaitlis binaraja sistema ir:", bin(number1))
@@ -22,13 +22,13 @@ https://docs.python.org/3/library/functions.html
 
 ##### divmod(a, b)
  Funkcija divmod(a, b) atgriez skaitlu dalijuma rezultatu un atlikumu, ka paramtetri jaiedod skaitlis kas jadala un ar ko jadala.
- ##### piemers1
+ ###### piemers 1
  ```
  number1 = float((input("Ievadiet skaitli 1:")))
  number2 = float((input("Ievadiet skaitli 2:")))
  print("skaitlu dalijums ar atlikumu ir:", divmod(number1,number2))
  ```
- ##### piemers2
+ ###### piemers 2
  ```
  number1 = float((input("Ievadiet skaitli 1:")))
  number2 = float((input("Ievadiet skaitli 2:")))
