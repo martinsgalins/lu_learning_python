@@ -13,6 +13,7 @@ https://docs.python.org/3/library/functions.html
 > ```
 
 ##### bin(x)
+> Funkcija bin(x) konverte vesalsus skaitlus no decimalas uz binaro sistemu, ka parametrs jaiedod vesels skaitlis.
 > ##### piemers
 > ```
 > number1 = int((input("Ievadiet veselu decimalo skaitli skaitli:")))
@@ -20,6 +21,7 @@ https://docs.python.org/3/library/functions.html
 > ```
 
 ##### divmod(a, b)
+> Funkcija divmod(a, b) atgriez skaitlu dalijuma rezultatu un atlikumu, ka paramtetri jaiedod skaitlis kas jadala un ar ko jadala.
 > ##### piemers1
 > ```
 > number1 = float((input("Ievadietskaitli1:")))
