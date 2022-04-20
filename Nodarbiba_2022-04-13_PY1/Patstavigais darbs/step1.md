@@ -2,6 +2,7 @@
 https://docs.python.org/3/library/functions.html
 
 ## round(number[, ndigits])
+### Funkcija round(number[, ndigits]) veics skaitlu noapalosanu, parametros jaiedod skaitlis un uz cik simboliem janoapalo.
 #### piemers
 ```
 number1 = float((input("Ievadiet skaitli:")))
