@@ -1,6 +1,9 @@
-## visas Python funkcijas
+## Python funkcijas
+#### Funkciju saraksts
 https://docs.python.org/3/library/functions.html
 
+
+### 3 Funkciju apraksts
 #### round(number[, ndigits])
 ##### Funkcija round(number[, ndigits]) veics skaitlu noapalosanu, parametros jaiedod skaitlis un uz cik simboliem janoapalo.
 #### piemers
