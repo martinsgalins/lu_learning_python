@@ -83,19 +83,62 @@ while x != 3:
             if d in word:
                 guessed_letters.append(d)
                 display_image = output_image()
-                print(f"{str(display_image)}")
+                if get_guessed_letters(word, guessed_letters) == word:
+                    print(word)
+                    print("You Won!")
+                    break
+                elif str(display_image) == "error_count_0":
+                    print(error_count_0)
+                elif str(display_image) == "error_count_1":
+                    print(error_count_1)
+                elif str(display_image) == "error_count_2":
+                    print(error_count_2)  
+                elif str(display_image) == "error_count_3":
+                    print(error_count_3)
+                elif str(display_image) == "error_count_4":
+                    print(error_count_4) 
+                elif str(display_image) == "error_count_5":
+                    print(error_count_5)
+                elif str(display_image) == "error_count_6":
+                    print(error_count_6)
                 print("Guessed letters:",guessed_letters)
                 print(get_guessed_letters(word, guessed_letters))
             else:
                 error_count += 1
                 guessed_letters.append(d)
-                print(output_image())
-                print("Guessed letters:",guessed_letters) 
-                print(get_guessed_letters(word, guessed_letters)) 
+                display_image = output_image()
+                if str(display_image) == "error_count_0":
+                    print(error_count_0)
+                    print("Guessed letters:",guessed_letters) 
+                    print(get_guessed_letters(word, guessed_letters))
+                elif str(display_image) == "error_count_1":
+                    print(error_count_1)
+                    print("Guessed letters:",guessed_letters) 
+                    print(get_guessed_letters(word, guessed_letters))
+                elif str(display_image) == "error_count_2":
+                    print(error_count_2)
+                    print("Guessed letters:",guessed_letters) 
+                    print(get_guessed_letters(word, guessed_letters))  
+                elif str(display_image) == "error_count_3":
+                    print(error_count_3)
+                    print("Guessed letters:",guessed_letters) 
+                    print(get_guessed_letters(word, guessed_letters))
+                elif str(display_image) == "error_count_4":
+                    print(error_count_4)
+                    print("Guessed letters:",guessed_letters) 
+                    print(get_guessed_letters(word, guessed_letters)) 
+                elif str(display_image) == "error_count_5":
+                    print(error_count_5)
+                    print("Guessed letters:",guessed_letters) 
+                    print(get_guessed_letters(word, guessed_letters))
+                elif str(display_image) == "error_count_6":
+                    print(error_count_6)
+                    print(word)
+                    print("You lose!")
     elif a == 2:
-        new_word = int(input("Enter word:"))
+        new_word = str(input("Enter word:"))
         words.append(new_word)
-        print("Word added to list!")
+        print(new_word, " added to list!")
     elif a == 3:
         x = a
         quit  
