@@ -1,15 +1,15 @@
-# aprakstam klasi - aprakstam kā strādā cilindri
-class Cylinder:
+# # aprakstam klasi - aprakstam kā strādā cilindri
+# class Cylinder:
 
-    def __init__(self, radius, height):
-        self.height = height
-        self.radius = radius
+#     def __init__(self, radius, height):
+#         self.height = height
+#         self.radius = radius
 
 
-# veidojam objektu – konkrētu cilindu
-cilindrs = Cylinder(height=5, radius=10)
-print(cilindrs.height)
-print(cilindrs.radius)
+# # veidojam objektu – konkrētu cilindu
+# cilindrs = Cylinder(height=5, radius=10)
+# print(cilindrs.height)
+# print(cilindrs.radius)
 # aprakstam klasi - aprakstam kā strādā cilindri
 class Cylinder:
 
