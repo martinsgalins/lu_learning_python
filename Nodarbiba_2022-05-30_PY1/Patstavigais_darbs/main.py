@@ -12,12 +12,18 @@ class Account:
         self.balance = 0
 
     def add_money(self, amount):
-        self.balance =+ amount
-        return print("Added: ",amount)
+        if amount > 0:
+            self.balance =+ amount
+            return print("Added: ",amount)
+        else:
+            print("Negative numbers not allowed!")    
         
     def withdraw(self, amount):
-        self.balance =- amount
-        return print("Withdrawn: ",amount)
+        if amount > 0 and amount < self.balance:
+            self.balance = (self.balance - amount)
+            return print("Withdrawn: ",amount)
+        else:
+            print("Illgal operation!") 
         
 
 class Client:
@@ -59,8 +65,8 @@ account_1 = Account()
 print(account_1.number)
 aldis.add_account(account_1)
 
-account_1.add_money(5000)
-account_1.withdraw(200)
+account_1.add_money(500)
+account_1.withdraw(20)
 print(account_1.balance)
 
 
