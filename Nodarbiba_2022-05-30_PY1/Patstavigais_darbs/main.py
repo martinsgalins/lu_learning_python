@@ -23,24 +23,25 @@ class Account:
             self.balance = (self.balance - amount)
             return print("Withdrawn: ",amount)
         else:
-            print("Illgal operation!") 
-        
+            print("Illgal operation!")
 
 class Client:
 
     def __init__(self, client_name):
         self.client_name = client_name
-        self.account = []
+        self.accounts = []
 
     def add_account(self, account):
-        self.account.append(account)
+        self.accounts.append(account)
 
     def get_total_balance(self):
-        return sum(self.account)
+        total_amount = []
+        for account in self.accounts:
+            total_amount.append(account.balance)
+        return sum(total_amount)
+    
 
-
-
-class Bank:
+class Bank():
 
     def __init__(self, bank_name):
         self.bank_name = bank_name
@@ -50,6 +51,9 @@ class Bank:
         self.clients.append(client_name)
 
     def get_total_deposits(self):
+        ############################
+        #nepaspeju realizēt, uz ātro neatradu kā strādāt ar datiem starp klasem, brīvā brīdī turpināšu
+        ############################
         pass
 
 
@@ -65,11 +69,14 @@ account_1 = Account()
 print(account_1.number)
 aldis.add_account(account_1)
 
-account_1.add_money(500)
-account_1.withdraw(20)
+account_1.add_money(600)
+account_1.withdraw(30)
 print(account_1.balance)
 
 
 account_2 = Account()
 aldis.add_account(account_2)
 account_2.add_money(20)
+
+#print(aldis.get_total_balance())
+#print(banka.get_total_deposits())
