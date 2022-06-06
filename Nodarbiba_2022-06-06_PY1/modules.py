@@ -1,4 +1,4 @@
 import sys
-list = sys.builtin_module_names
-for x in list:
-    print(x)
+modules = sys.builtin_module_names
+for module in list:
+    print(module)
