@@ -51,10 +51,10 @@ class Bank():
         self.clients.append(client_name)
 
     def get_total_deposits(self):
-        ############################
-        #nepaspeju realizēt, uz ātro neatradu kā strādāt ar datiem starp klasem, brīvā brīdī turpināšu
-        ############################
-        pass
+        total_deposits = []
+        for client in self.clients:
+            total_deposits.append(client.get_total_balance())
+        return sum(total_deposits)
 
 
 banka = Bank(bank_name="Jaunā Banka")
@@ -65,18 +65,21 @@ zane = Client(client_name="Zane")
 banka.add_client(aldis)
 banka.add_client(zane)
 
+
+
 account_1 = Account()
 print(account_1.number)
 aldis.add_account(account_1)
-
 account_1.add_money(600)
 account_1.withdraw(30)
 print(account_1.balance)
-
 
 account_2 = Account()
 aldis.add_account(account_2)
 account_2.add_money(20)
 
-#print(aldis.get_total_balance())
-#print(banka.get_total_deposits())
+print(aldis.get_total_balance())
+account_3 = Account()
+zane.add_account(account_3)
+account_3.add_money(600)
+print(banka.get_total_deposits())
